@@ -4,11 +4,54 @@
 <html data-wf-domain="codeway-bba586.webflow.io" data-wf-page="69a06fc286bb47e540a0e6e6" data-wf-site="69a06fc186bb47e540a0e615" data-wf-status="1">
     <head>
         <meta charset="utf-8"/>
-        <title>Codeway</title>
+        <title>Codeway: Цифровые решения и команда под ключ</title>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="Webflow" name="generator"/>
         <link href="https://cdn.prod.website-files.com/69a06fc186bb47e540a0e615/css/codeway-bba586.webflow.shared.731667ede.css" rel="stylesheet" type="text/css" integrity="sha384-cxZn7e/0lvBjXFitiJ37rDNQY+RDRajYC1zRGY65Wu7toRJqnPfoF52atf7h0Obx" crossorigin="anonymous"/>
         <style>
+            /* Скрытие Made In Webflow бейджа */
+            .wfu-badge,
+            .wf-badge,
+            a[href*="webflow.com"]:not([href*="codeway"]),
+            a[href*="webflow.com"][target="_blank"]:not([href*="codeway"]),
+            [class*="badge-webflow"],
+            [id*="webflow-badge"],
+            div[data-wf-badge] {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+            }
+            
+            /* Стили для секции отзывов - 3 карточки в ряд на десктопе */
+            .section.review .reviews-wrapper {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 20px !important;
+                max-width: 100% !important;
+                padding: 0 20px !important;
+                box-sizing: border-box !important;
+            }
+            
+            .section.review .review-card {
+                flex: 1 1 calc(33.333% - 20px) !important;
+                min-width: 280px !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            
+            @media (max-width: 991px) {
+                .section.review .review-card {
+                    flex: 1 1 calc(50% - 20px) !important;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                .section.review .review-card {
+                    flex: 1 1 100% !important;
+                }
+            }
+        </style>
             html.w-mod-js:not(.w-mod-ix3) :is(.section.big.vh) {
                 visibility: hidden !important;
             }
@@ -31,7 +74,7 @@
                 ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
             }(window, document);
         </script>
-        <link href="https://cdn.prod.website-files.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+        <link href="./img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
         <link href="https://cdn.prod.website-files.com/img/webclip.png" rel="apple-touch-icon"/>
     </head>
     <body class="body">
@@ -724,7 +767,7 @@
                     <div class="div-block-42">
                         <div class="div-block-41 mobile">
                             <div class="div-block-40">
-                                <div class="text-block-6">©2026Codeway. Все права защищены</div>
+                                <div class="text-block-6">©2026 Codeway. Все права защищены</div>
                             </div>
                             <div class="div-block-31">
                                 <div>
@@ -829,5 +872,30 @@
         <script src="https://cdn.prod.website-files.com/69a06fc186bb47e540a0e615/js/webflow.3cc2fa09.574b72cde04e9bf1.js" type="text/javascript" integrity="sha384-guZWjqpjFnCwV/ECk3x2mSeypO6N8gFRnl1QA12GFXpLwg3JVd2RDKb2vv4xHEh/" crossorigin="anonymous"></script>
         <script src="https://cdn.prod.website-files.com/gsap/3.14.2/gsap.min.js" type="text/javascript"></script>
         <script src="https://cdn.prod.website-files.com/gsap/3.14.2/ScrollTrigger.min.js" type="text/javascript"></script>
+        <script>
+            // Удаление Made In Webflow бейджа после загрузки
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    // Удаляем все возможные бейджи Webflow
+                    var selectors = [
+                        '.wfu-badge', 
+                        '.wf-badge', 
+                        'a[href*="webflow.com"][target="_blank"]',
+                        '[data-wf-badge]',
+                        '#webflow-badge',
+                        '.webflow-badge'
+                    ];
+                    selectors.forEach(function(selector) {
+                        var elements = document.querySelectorAll(selector);
+                        elements.forEach(function(el) {
+                            // Не удаляем ссылки на самого себя
+                            if (!el.href || (el.href && !el.href.includes('codeway'))) {
+                                el.remove();
+                            }
+                        });
+                    });
+                }, 500);
+            });
+        </script>
     </body>
 </html>
