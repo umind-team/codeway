@@ -51,9 +51,10 @@
                     flex: 1 1 100% !important;
                 }
             }
-        </style>
-            html.w-mod-js:not(.w-mod-ix3) :is(.section.big.vh) {
-                visibility: hidden !important;
+            
+            /* FAQ accordion fix - only one open at a time */
+            #faq .div-block-23 {
+                cursor: pointer;
             }
         </style>
         <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -76,6 +77,7 @@
         </script>
         <link href="./img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
         <link href="https://cdn.prod.website-files.com/img/webclip.png" rel="apple-touch-icon"/>
+        <script src="./main.js" type="text/javascript"></script>
     </head>
     <body class="body">
         <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
@@ -662,53 +664,53 @@
                 </div>
             </div>
         </section>
-        <section class="section big">
+        <section class="section big" id="faq">
             <div class="fixedwrapper">
                 <div id="w-node-cba86698-777e-950d-ccdb-da28b8ca4f08-40a0e6e6" class="div-block-12">
                     <h2 class="heading-h2">FAQ</h2>
                     <div class="div-block-9 _2"></div>
                 </div>
                 <div class="faq-card">
-                    <div data-w-id="dcee2fdc-e7e0-e377-fed7-93b5256d15f2" class="div-block-23">
+                    <div data-w-id="dcee2fdc-e7e0-e377-fed7-93b5256d15f2" class="div-block-23 f-card">
                         <div class="div-block-25">
                             <h3 class="heading-h3 white-bg-11">Нужно ли приносить готовое ТЗ?</h3>
-                            <p class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
+                            <p style="font-size: 16px; line-height: 1.5;" class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
                         </div>
                         <img src="https://cdn.prod.website-files.com/69a06fc186bb47e540a0e615/69add8918ca936a8b0c14b5a_ArrowUpRight.svg" loading="lazy" alt="" class="image-5"/>
                     </div>
                 </div>
                 <div class="faq-card">
-                    <div data-w-id="c8bbd5b4-a317-b57c-a803-b66b936ee550" class="div-block-23">
+                    <div data-w-id="c8bbd5b4-a317-b57c-a803-b66b936ee550" class="div-block-23 f-card">
                         <div class="div-block-25">
                             <h3 class="heading-h3 white-bg-11">Чем вы отличаетесь от фрилансеров и больших агентств?</h3>
-                            <p class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
+                            <p style="font-size: 16px; line-height: 1.5;" class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
                         </div>
                         <img src="https://cdn.prod.website-files.com/69a06fc186bb47e540a0e615/69add8918ca936a8b0c14b5a_ArrowUpRight.svg" loading="lazy" alt="" class="image-5"/>
                     </div>
                 </div>
                 <div class="faq-card">
-                    <div data-w-id="386efd8b-dd2b-9d90-b1be-08674415245c" class="div-block-23">
+                    <div data-w-id="386efd8b-dd2b-9d90-b1be-08674415245c" class="div-block-23 f-card">
                         <div class="div-block-25">
                             <h3 class="heading-h3 white-bg-11">А если у нас уже есть своя команда?</h3>
-                            <p class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
+                            <p style="font-size: 16px; line-height: 1.5;" class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
                         </div>
                         <img src="https://cdn.prod.website-files.com/69a06fc186bb47e540a0e615/69add8918ca936a8b0c14b5a_ArrowUpRight.svg" loading="lazy" alt="" class="image-5"/>
                     </div>
                 </div>
                 <div class="faq-card">
-                    <div data-w-id="764a9c05-7979-ac6c-c9a4-d2a86ef2fe07" class="div-block-23">
+                    <div data-w-id="764a9c05-7979-ac6c-c9a4-d2a86ef2fe07" class="div-block-23 f-card">
                         <div class="div-block-25">
                             <h3 class="heading-h3 white-bg-11">Вы работаете только со стартапами?</h3>
-                            <p class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
+                            <p style="font-size: 16px; line-height: 1.5;" class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
                         </div>
                         <img src="https://cdn.prod.website-files.com/69a06fc186bb47e540a0e615/69add8918ca936a8b0c14b5a_ArrowUpRight.svg" loading="lazy" alt="" class="image-5"/>
                     </div>
                 </div>
                 <div class="faq-card">
-                    <div data-w-id="cb4c1b68-4889-a4f0-c195-afd65e77d201" class="div-block-23">
+                    <div data-w-id="cb4c1b68-4889-a4f0-c195-afd65e77d201" class="div-block-23 f-card">
                         <div class="div-block-25">
                             <h3 class="heading-h3 white-bg-11">Что будет после запуска?</h3>
-                            <p class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
+                            <p style="font-size: 16px; line-height: 1.5;" class="paragraph-2 left">Фрилансер может сделать кусок работы и не вникать в общую картину, агентство — дорого и долго. Мы совмещаем стратегию, дизайн и разработку, работаем прозрачно и предсказуемо.</p>
                         </div>
                         <img src="https://cdn.prod.website-files.com/69a06fc186bb47e540a0e615/69add8918ca936a8b0c14b5a_ArrowUpRight.svg" loading="lazy" alt="" class="image-5"/>
                     </div>
